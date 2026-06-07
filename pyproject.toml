@@ -3,7 +3,7 @@ requires = ["setuptools>=64", "wheel"]
 build-backend = "setuptools.build_meta"
 [project]
 name = "pylowlvl-os"
-version = "0.0.0a0"
+version = "0.1.0a0"
 description = "A beginner-friendly toolkit for building your own OS from scratch"
 readme = "README.md"
 license = {file = "LICENSE"}
