@@ -1,0 +1,55 @@
+[build-system]
+requires = ["setuptools>=64", "wheel"]
+build-backend = "setuptools.build_meta"
+[project]
+name = "pylowlvl-os"
+version = "0.0.0a0"
+description = "A beginner-friendly toolkit for building your own OS from scratch"
+readme = "README.md"
+license = {file = "LICENSE"}
+authors = [
+    {name = "scodyx"}
+]
+keywords = ["osdev", "assembler", "bootloader", "kernel", "education"]
+classifiers = [
+    "Development Status :: 0 - Pre-Alpha",
+    "Intended Audience :: Education",
+    "Intended Audience :: Developers",
+    "Topic :: System :: Operating System",
+    "Topic :: Education",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Assembly",
+    "Operating System :: Microsoft :: Windows",
+    "Operating System :: POSIX :: Linux",
+]
+requires-python = ">=3.10"
+dependencies = [
+    "click>=8.0",
+    "pycdlib>=1.16.0"
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.0",
+    "black",
+    "ruff",
+]
+
+[project.scripts]
+pylowlvl = "pylowlvl_os.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.black]
+line-length = 100
+target-version = ["py310"]
+
+[tool.ruff]
+line-length = 100
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
