@@ -96,6 +96,9 @@ build.run("boot.bin")
 
 ```
 
+<div align="center">
+  <img src="assets/pylowlvl-os.gif" />
+</div>
 ---
 
 * **[NASM Documentation](https://www.nasm.us/docs.php):** Official manual for the Netwide Assembler.
