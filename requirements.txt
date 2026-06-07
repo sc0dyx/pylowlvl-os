@@ -1,0 +1,4 @@
+packaging
+pycdlib>=1.16.0
+setuptools>=64
+wheel>=0.47.0
