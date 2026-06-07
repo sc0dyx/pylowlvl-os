@@ -91,6 +91,10 @@ build = PLowBuilder(boot)
 build.run("boot.bin")
 ```
 
+<div align="center">
+  <img src="assets/pylowlvl-os.gif" />
+</div>
+
 ---
 
 * **[Документация NASM](https://www.nasm.us/docs.php):** Официальное руководство по ассемблеру NASM.
